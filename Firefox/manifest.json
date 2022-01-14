@@ -1,0 +1,23 @@
+{
+    "name": "View Discord Contents",
+    "description": "View Discord File Contents Instead Of Downloading Them.",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "permissions": [
+        "*://cdn.discordapp.com/*",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+
+    "icons": {
+        "16": "/images/16.png",
+        "32": "/images/32.png",
+        "48": "/images/48.png",
+        "128": "/images/128.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    }
+  }
