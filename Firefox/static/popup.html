@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="popup.js"></script>
+</head>
+
+<body>
+    <div id="popup-content">
+        
+        <img src="../images/48.png"></img>
+        <h1>View Discord Contents</h1>
+
+        <div id="setup-content" class="hidden">
+            <div id="setup-form1" class="hidden">
+                <p>
+                    It seems like this is your first time using the View Discord Contents extension.
+                    <br>
+                    Let's get you set up so you can start using it!
+                </p>
+                <br>
+                <button class="button" id="setup-form1-continue">Continue</button>
+            </div>
+
+            <div id="setup-form2" class="hidden">
+                <p>
+                    Which method would you like to use to view files?
+                </p>
+
+                <br>
+
+                <div class="choices">
+                    <label for="method-radio1" class="div">
+                        <span>
+                            <input type="radio" id="method-radio1" name="setup-form2-radios" value="radio1">
+                            <span>Content-Disposition header</span>
+                        </span>
+                        <span class="small">
+                            This option removes the need to download the file to view it. This is the default method.
+                        </span>
+                    </label>
+                    <label for="method-radio2" class="div">
+                        <span>
+                            <input type="radio" id="method-radio2" name="setup-form2-radios" value="radio2">
+                            <span>media.discordapp.net</span>
+                        </span>
+                        <span class="small">
+                            This option uses the media.discordapp.net domain, so the extension doesn't have to modify
+                            the page.
+                        </span>
+                    </label>
+                </div>
+
+                <br>
+
+                <p>Please choose one of these options.</p>
+
+                <br>
+
+                <button disabled class="button" id="setup-form2-continue">Continue</button>
+
+                <footer id="footer2">You can change this later.</footer>
+            </div>
+
+            <div id="setup-form3" class="hidden">
+                <p>Would you like some extra security features?</p>
+
+                <div class="hoz">
+                    <button class="button" id="setup-form3-yes">Yes</button>
+                    <button class="button" id="setup-form3-no">No</button>
+                </div>
+
+                <footer id="footer3">You can change this later.</footer>
+            </div>
+
+            <div id="setup-form4" class="hidden">
+                <p>What logging features would you like?</p>
+                <br>
+
+                <div class="choices">
+                    <label for="logging-radio1" class="div">      
+                        <span class="unc">
+                            <input type="radio" id="logging-radio1" name="radios2" value="2">
+                            <label for="logging-radio1">Verbose Logging</label>
+                        </span>
+                        <span class="small">
+                            Logs site headers and responses.
+                        </span>
+                    </label>
+
+                    <label for="logging-radio2" class="div">
+                        <span>
+                            <input type="radio" id="logging-radio2" name="radios2" value="1">
+                            <label for="logging-radio2">Extra Logging</label>
+                        </span>
+                        <span class="small">
+                            Logs progress of the extension, etc..
+                        </span>
+                    </label>
+
+                    <label for="logging-radio3" class="div">
+                        <span>
+                            <input type="radio" id="logging-radio3" name="radios2" value="0">
+                            <span>No logging</span>
+                        </span>
+                        <span class="small">
+                            Logs progress of the extension, etc..
+                        </span>
+                    </label>
+
+                    <br>
+
+                </div>
+
+                <span>
+                    <button disabled class="button" id="setup-form4-continue">Continue</button>
+                </span>
+
+    
+                <footer id="footer5">You can change this later.</footer>
+            </div>
+
+            <div id="setup-form-done" class="hidden">
+                <p>Congrats!</p>
+                <p>You are now ready to use the View Discord Contents extension!</p>
+
+
+                <button class="button" id="setup-form-done">Done</button>
+
+                <footer id="footerdone">Thanks for installing this extension!</footer>
+            </div>
+        </div>
+
+        <div id="main-content" class="hidden">
+
+            <br>
+
+            <h2>Sites viewed with VDC:</h2>
+            <p id="main-sites-viewed"></p>
+
+            <br>
+
+            <button>Settings</button>
+        </div>
+
+    </div>
+
+    <div id="error-content">
+        <p>Hey! An error occoured.</p>
+        <p>Try to turn </p><code>javascript</code><p> on.</p>
+        <p>If that doesn't work. Try looking at our troubleshooting page.</p>
+    </div>
+
+</body>
+
+</html>

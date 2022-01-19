@@ -1,13 +1,14 @@
 {
     "name": "View Discord Contents",
-    "description": "View Discord File Contents Instead Of Downloading Them.",
-    "version": "1.0",
+    "description": "This extension adds methods for viewing file contents on Discord's CDN server instead of downloading them.",
+    "version": "2.0",
     "manifest_version": 2,
 
     "permissions": [
         "*://cdn.discordapp.com/*",
         "webRequest",
-        "webRequestBlocking"
+        "webRequestBlocking",
+        "storage"
     ],
 
     "icons": {
@@ -17,7 +18,22 @@
         "128": "/images/128.png"
     },
 
+    "browser_action": {
+        "default_icon": "images/48.png",
+        "default_title": "View Discord Contents",
+        "default_popup": "static/popup.html"
+    },
+
+    "web_accessible_resources": [
+        "static/style.css",
+        "images/128.png",
+        "images/48.png",
+        "images/32.png",
+        "images/16.png",
+        "static/settings.html"
+    ],
+
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["MainBackground.js", "ConfigBackground.js"]
     }
   }
