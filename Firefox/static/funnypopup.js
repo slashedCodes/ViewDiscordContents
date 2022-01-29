@@ -180,3 +180,4 @@ browser.storage.local.get(json)
         json = item;
         start();
     }, onError);
+
