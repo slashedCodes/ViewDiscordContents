@@ -11,7 +11,8 @@
     "permissions": [
         "webRequest",
         "webRequestBlocking",
-        "*://cdn.discordapp.com/"
+        "*://cdn.discordapp.com/",
+        "*://discord.com/"
     ],
     
     "browser_action": {
