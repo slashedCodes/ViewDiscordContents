@@ -13,7 +13,8 @@
         "webNavigation",
         "webRequestBlocking",
         "*://cdn.discordapp.com/",
-        "*://discord.com/"
+        "*://discord.com/",
+        "*://images-ext-2.discordapp.net/"
     ],
     
     "browser_action": {
