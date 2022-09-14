@@ -6,6 +6,8 @@
 
     "permissions": [
         "*://cdn.discordapp.com/*",
+        "*://images-ext-2.discordapp.net/",
+        "*://discord.com/",
         "webRequest",
         "webRequestBlocking",
         "storage",
